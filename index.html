@@ -1,51 +1,37 @@
-<html>
-<head>
+---
+layout: default
+---
+
 <script type="text/javascript">
-function random_3(){
-    var myrandom=Math.round(Math.random()*2)
-    var link1="http://www.gu.se"
-    var link2="http://ait.gu.se"
-    var link3="http://xkcd.com"
-    if (myrandom==0)
+function randomUrl(){
+    var myrandom=Math.round(Math.random()*3)
+    var link1="https://forms.gle/Y9y9dUStPLeXUN68A"
+    var link2=" https://forms.gle/KyPbAZhr3Fiasqxy5"
+    var link3="https://forms.gle/GcNSoMNjy3gVtmPL7"
+    if (myrandom <= 1)
         window.location=link1
-    else if (myrandom==1)
-        window.location=link2
     else if (myrandom==2)
+        window.location=link2
+    else if (myrandom==3)
         window.location=link3
 }
 </script>
-<style type="text/css">
-   * { box-sizing: border-box; }
-   header { z-index: 100; position: fixed; left: 0; top: 0;
-            height: 150px; width: 100%; background-color: #FFFFFF; }
-   header img { height: 100%; width: auto; }
-   article { margin-top: 4em; }
-   html, body {
-    height: 100%;
-}
 
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-</style>
-</head>
-<body>
-<header id="logo">
-   <img src="logo.png"/>
-        <h1>Formulär</h1>
-    </header>
-<article>
-
+<p>
+Välkommen till denna forskningsstudie om attityder och bedömningar. Studien tar ca 10-15 minuter att genomföra och består av tre delar, som kommer förklaras allteftersom du fortsätter genom studien.
+</p>
+<p>
+Notera att du kan avbryta studien när som helst, vilket innebär att din data inte kommer samlas in. Såvida du inte vill avbryta studien i förtid ber vi dig försäkra dig om att hela studien är färdig innan du stänger ner rutan. 
+</p>
+<p>
+Ifall du är intresserad av att ta del av framtida information om studien kan du höra av dig till undersökningsansvarig på mailadress <a href="mailto:attitudment@gmail.com">attitudment@gmail.com</a>. 
+</p>
+<p>
+Tack för din medverkan!
+</p>
+<p>
+Klicka på knappen nedan för att starta studien.
+</p>
 <form>
-<input type="button" value="korv!" onClick="random_3()">
+<input type="button" value="Start" onClick="randomUrl()">
 </form>
-</article>
-
-</body>
-</html>
